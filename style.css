@@ -1,0 +1,119 @@
+body{
+    align-items: center;
+    background-color: #222222;
+    color:#FFFFFF;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+*, h1, h2, h3, h4, h5, h6 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    align-items: center;
+    background-color: #333333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 40vh;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    width: 35vw;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.clock {
+    font-size: 3rem;
+}
+
+.pause__clock {
+    font-size: 3rem;
+    color: #dd3d3d;
+}
+
+.btn__container {
+    display: flex;
+    gap: 1em;
+}
+
+.start, .reset, .pause {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin: .5em;
+    padding: .25em .75em;   
+    transition: .75s ease;
+}
+
+.start:hover, .reset:hover, .pause:hover {
+    background-color: #696868;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 60vw;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .clock {
+        font-size: 3rem;
+    }
+
+    .start, .reset, .pause {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 2.25em;
+    }
+
+    .clock {
+        font-size: 3rem;
+    }
+
+    .start, .reset, .pause {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .clock {
+        font-size: 2.5rem;
+    }
+
+    .start, .reset, .pause {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
